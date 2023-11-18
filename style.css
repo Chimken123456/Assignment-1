@@ -12,7 +12,7 @@ img{
     width:150px;
     height:auto;
 }
-
+/*Nav bar = Navigation Bar which is the universal link to all pages */
 .navbar{
     position: fixed;
     width: 1920px;
@@ -26,11 +26,13 @@ img{
     padding-bottom:10px;
     background-color: rgb(167, 167, 29);
 }
+/*Nav bar flex is to spread all the components of the flex items such as Home, Shop, About Us*/
 .navbarflex{
     display:flex;
     justify-content: space-evenly;
 }
 
+/*Nav bar flex form is to ensure that the search bar is on the right instead of on the left */
 .navbarflex form{
     display:flex;
     justify-content: flex-end;
@@ -43,12 +45,13 @@ img{
     font-size:35px
 
 }
-
+/*Box is to expand the border around the images of the item being sold to look neater*/
 .box{
     border:50px solid;
     border-color: white;
 }
 
+/*Container for sales refers to container for item being sold*/
 .container_sales{
     background-color: grey;
     padding:50px;
@@ -61,6 +64,7 @@ img{
     border-color: white;
 }
 
+/*Gallery refers to the display of images*/
 .gallery{
     display:flex;
     justify-content: space-around;
