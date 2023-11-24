@@ -1,61 +1,111 @@
+html{
+    width:100%;
+    height:100%;
+}
+
 *{
     font-family:"Roboto";
     margin:0;
-
+    color:white;
 }
-
 body{
     text-align: center;
+    background-image: url("images/1337846.png");
+    background-size: cover;
+    z-index: -1;
 }
 
 img{
     width:150px;
     height:auto;
 }
+
+
+
+
 /*Nav bar = Navigation Bar which is the universal link to all pages */
-.navbar{
+/* .navbar{
+    z-index:0;
     position: fixed;
     width: 1920px;
     height: 1080px;
     max-height:11%;
     color:white;
     font-size: 20px;
-    border-bottom-left-radius: 200px;
-    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
     padding:5px;
     padding-bottom:10px;
-    background-color: rgb(167, 167, 29);
-}
-/*Nav bar flex is to spread all the components of the flex items such as Home, Shop, About Us*/
+    background-color: rgb(61, 167, 29);
+} */
 .navbarflex{
+    border-bottom:3px solid;
+    position: fixed;
+    width: 1920px;
+    height: 1080px;
+    max-height:7%;
+    max-width: 100%;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    align-items: center;
+    gap:20px;
+}
+.navbarflex div{
+    margin-right:70px;
+}
+.navbarflex i{
+    margin-right:40px;
 }
 
+/*Nav bar flex is to spread all the components of the flex items such as Home, Shop, About Us*/
+/* .navbarflex{
+    display:flex;
+    justify-content: space-evenly; 
+    border:2px solid;
+    border-color:black;
+}
+*/
+
 /*Nav bar flex form is to ensure that the search bar is on the right instead of on the left */
-.navbarflex form{
+/*.navbarflex form{
+    border:2px solid;
+    border-color:black;
     display:flex;
     justify-content: flex-end;
     margin-left:200px;
 }
 
+.navbarflex div{
+    border:2px solid;
+    border-color:black;
+    display:flex;
+    justify-content: center;
+}
+*/
 #logo{
+    position: fixed;
+    width: 1920px;
+    height: 1080px;
+    max-height:7%;
+    max-width: 100%;
+    margin-left:10px;
+    margin-left:50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 20%;
     font-family: "homemade apple";
     letter-spacing: 10px;
-    font-size:35px
-
-}
-/*Box is to expand the border around the images of the item being sold to look neater*/
-.box{
-    border:50px solid;
-    border-color: white;
+    font-size:25px
 }
 
 /*Container for sales refers to container for item being sold*/
 .container_sales{
     background-color: grey;
+    margin:20px;
     padding:50px;
-    margin-top:100px;
+    margin-top:130px;
+    border-radius: 75px;
 }
 
 .container_sales h1{
@@ -67,7 +117,187 @@ img{
 /*Gallery refers to the display of images*/
 .gallery{
     display:flex;
+    gap:10px;
     justify-content: space-around;
     flex-wrap:wrap;
     color:white;
 }
+.gallery img{
+    /* flex-basis:13.5%;  */
+    flex-grow:0;
+    width:230px;
+    height:auto;
+}
+
+.gallery h3{
+    justify-content: center;
+    width:230px;
+    margin-top:10px;
+}
+
+/*Box is to expand the border around the images of the item being sold to look neater*/
+.box1{
+    border:20px solid;
+    border-color: white;
+    display:flex;
+    order:0;
+}
+.box2{
+    border:20px solid;
+    border-color: white;
+    display:flex;
+    order:0;
+}
+.box3{
+    border:20px solid;
+    border-color: white;
+    display:flex;
+    order:0;
+}
+.box4{
+    border:20px solid;
+    border-color: white;
+    display:flex;
+}
+.box5{
+    border:20px solid;
+    border-color: white;
+    display:flex;
+    order:0;
+}
+.box6{
+    border:20px solid;
+    border-color: white;
+    display:flex;
+    order:0;
+}
+.item7{
+    display:flex;
+    order:0;
+}
+.item8{
+    display:flex;
+    order:0;
+}
+
+.item9{
+    display:flex;
+    order:0;
+}
+
+.item10{
+    display:flex;
+    order:0;
+}
+
+.item11{
+    display:flex;
+    order:0;
+}
+
+.item12{
+    display:flex;
+    order:0;
+}
+
+
+
+
+@media screen and (max-width:431px){
+    .navbarflex{
+        width: 430px;
+        height:932px;
+        max-height:10%;
+        font-size: small;
+        justify-content: space-around;
+        flex-wrap:wrap;
+
+    }
+    .navbarflex div{
+        margin-right:0px;
+    }
+    #logo{
+        width: 430px;
+        height:932px;
+        max-height:10%;
+        font-size:small;
+        margin-left:0;
+    }
+    /* .navbarflex{
+        font-size:small;
+        gap:10%;
+        flex-wrap:wrap;
+    } */
+    .navbarflex form{
+        margin:0px;
+    }
+
+    .container_sales{
+        border-radius:35px;
+        margin-top:85px;
+    }  
+    .gallery{
+        display:flex;
+        justify-content: space-around;
+        gap:15px;
+    }
+    .gallery img{   
+        display:flex;
+        width:30%;
+        height:auto;
+    } 
+    .gallery h3{
+        width:30%;
+        height:10%;
+    }
+    .box1{
+        border:20px solid;
+        border-color: white;
+        order:0;
+    }
+    .box2{
+        border:20px solid;
+        border-color: white;
+        order:1;
+    }
+    .box3{
+        border:20px solid;
+        border-color: white;
+        order:4;
+    }
+    .box4{
+        border:20px solid;
+        border-color: white;
+        order:5;
+    }
+    .box5{
+        border:20px solid;
+        border-color: white;
+        order:8;
+    }
+    .box6{
+        border:20px solid;
+        border-color: white;
+        order:9;
+    }
+    .item7{
+        order:2;
+    }
+    .item8{
+        order:3;
+    }
+    .item9{
+        order:6;
+    }
+    .item10{
+        order:7;
+    }
+    .item11{
+        order:10;
+    }
+    .item12{
+        order:11;
+    }
+    
+}
+
