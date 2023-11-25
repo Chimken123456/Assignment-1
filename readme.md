@@ -30,3 +30,8 @@ https://www.pinterest.com/pin/1077908492049730999/ (Waist Shorts)
 https://www.pinterest.com/pin/AR-CV7clUxB6LW6VQ5_Mmr3iqNGi9GVWRIuj9ups2VUtVMGASzvfLkGltnI61smY7aoJOj0mSboc8SsrVVd_41g/ (Henly Shirt)
 https://www.pinterest.com/pin/1077908492049730974/ (Windbreaker)
 https://www.pinterest.com/pin/1077908492049730969/ (Sweatshirt)
+
+https://wall.alphacoders.com/big.php?i=1337846 (Background)
+https://vivaglammagazine.com/womens-fashion-choice-8-things-every-woman-should-have-in-her-wardrobe/ (Pink women in Home page)
+
+
