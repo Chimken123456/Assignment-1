@@ -1,0 +1,93 @@
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4aa858a7fc.js" crossorigin="anonymous"></script>
+    <!-- <script src = "script.js"></script> -->
+
+    <head>
+        <header>
+            <!-- <nav class = navbar> -->
+                <!-- <div id = logo>Fashionable</div> -->
+                <div id = logo>Fashionable</div>
+                <div class = navbarflex>
+                    <div><a href = "index.html" title = "Home"><i class="fa-solid fa-house"></i></a></div>
+                    <div><a href = "shop.html" title = "Shop"><i class="fa-solid fa-shop"></i></a></div>
+                    <div><i class="fa-solid fa-circle-info"></i></div>
+                    <div><i class="fa-solid fa-phone"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <form>
+                        <label>
+                            Search:
+                            <input type = "text" placeholder="Search">
+                        </label>
+                    </form>
+                    <a href = "checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </nav>
+        </header>
+    </head>
+
+    <body>
+        <div class = "shoppingcart">
+            <header>
+                <h1>Shopping Cart</h1>
+            </header>
+
+            <!-- Items -->
+            <section class = "display">
+                <div>Item 1</div>
+                <div>Item 2</div>
+                <div>Item 3</div>
+                <div>Item 4</div>
+            </section>
+        </div>
+
+        <div class = "cost">
+            <h2>Total</h2>
+            <div>$100</div>
+
+        </div>
+
+        <div class = checkout>
+            <header>
+                <h1>Payment</h1>
+            </header>
+
+            <form>
+                <label class = "form"><h2>Payment method</h2><br>
+                    <div>
+                        <input type = "radio" name = "paymennt_method" id = "credit_card"> Credit/Debit card
+                        <div class="form_image1"><img src = "images/credit-card-black-png-0.png"></div>
+                    </div>
+                    <div>
+                        <input type = "radio" name = "paymennt_method" id = "pay_now"> PayNow
+                        <div class="form_image2"><img src = "images/paynow-logo-2-01.png"></div>
+                    </div>
+                    <br>
+                    <br>
+                </label>
+                <div class = "promo">
+                    <label>Promo Code</label><br>
+                    <div class = "promocode">
+                        <input type = "text" placeholder="Code" name="promo_code" id = "code">
+                        <button id = "codebutton">Submit</button>
+                    </div>
+                </div>
+
+                <button class ="promobutton">
+                    Checkout
+                </button>
+            </form>
+        </div>
+        
+    </body>
+
+    <script src = "script.js"></script>
+</html>>

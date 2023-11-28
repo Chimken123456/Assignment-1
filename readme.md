@@ -34,4 +34,7 @@ https://www.pinterest.com/pin/1077908492049730969/ (Sweatshirt)
 https://wall.alphacoders.com/big.php?i=1337846 (Background)
 https://vivaglammagazine.com/womens-fashion-choice-8-things-every-woman-should-have-in-her-wardrobe/ (Pink women in Home page)
 
+https://thewhisky.sg/paynow-logo-2-01/ (Paynow Logo)
+https://www.freeiconspng.com/images/credit-card-icon-png (Credit/Debit card image)
+
 
