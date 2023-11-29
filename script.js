@@ -1,31 +1,32 @@
 //Promo Code
 function CheckCode(){
-    code = document.getElementById("code").value
-    console.log(code)
-    if (code === "First1")
+    let status = false;
+    code = document.getElementById("code").value;
+    if (code === "First1" && count === 0 )
     {
-        alert("Code redeemed successfully.");
+        alert("Code redeemed successfully. Total cost is deducted by $10");
+        total_cost = total_cost-10;
+        count ++;
+        status = true;
+        
+    }
+    else if (code === "First1" && count === 1)
+    {
+        alert("Code has already been redeemed");
     }
     else
     {
-        alert("Wrong code.")
+        alert("Invalid code.");
     }
+    return status;
 }
-
 let code;
+let cost;
+let count = 0;
+let total_cost = 39;
+let value = document.getElementById("value")
+value.innerHTML = "$"+total_cost
 var button = document.getElementById("codebutton");
-
 button.addEventListener("click",CheckCode)
-
-//Adding items to cart
-
-//my method
-// can try mix and match item and cart in the array. array[0] is the item and array[0+6] will be its corresponding name as well as its cart
-/*
-By dg that, i can let the user press the cart, trace back to the array array[cart_num -6] and find the image.
-In js, can make a dictionary and store all the neccessary information such as item id, name, price, img link.
-From there we use the image link found in the array and search it in the dictionary
-and then display
-*/
 
 

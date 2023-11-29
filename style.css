@@ -498,7 +498,7 @@ img{
 
 /*Container for sales refers to container for item being sold*/
 .container_sales{
-    background-color: grey;
+    background-color: rgb(128, 128, 128,0.7);
     margin:20px;
     padding:50px;
     margin-top:130px;
@@ -508,6 +508,7 @@ img{
 .container_sales h1{
     color:white;
     border-bottom: 2px solid;
+    border-radius: 20px;
     border-color: white;
 }
 
@@ -597,6 +598,7 @@ img{
     order:0;
 }
 
+
 .shoppingcart{
   position:absolute;
   margin-top:7%;
@@ -609,7 +611,7 @@ img{
   border:2px solid;
   border-color:white;
   flex-direction: column;
-  background-color: grey;
+  background-color:rgb(128, 128, 128,0.5);
   border-radius: 20px;
   
 }
@@ -622,23 +624,29 @@ img{
   padding-bottom:20px;
 }
 .display{
-  margin-top:3%;
+  height:90%;
+  margin-top:1%;
   display:flex;
   flex-direction: column;
   align-items: flex-start;
+  flex-wrap:wrap;
   gap:100px;
   font-size:larger;
   margin-left:10%
+}
+.display img{
+  max-width:20%;
+  height:auto;
 }
 .display div{
   background-color: azure;
   border-radius:10px;
   color:black;
   display:flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  width:40%;
-  height:50px;
+  width:20%;
+  height:70px;
 }
 
 .cost{
@@ -674,6 +682,8 @@ img{
   justify-content: center;
   align-items: center;
   margin-top:4%;
+  font-size:30px;
+  font-weight:bold;
 }
 
 .checkout{
@@ -684,7 +694,7 @@ img{
   height:1080px;
   max-width:30%;
   max-height:80%;
-  background-color:grey;
+  background-color:rgb(128, 128, 128,0.5);
   border:2px solid;
   border-color:white;
   border-radius:20px;
@@ -702,6 +712,8 @@ img{
   flex-direction: column;
   height:50%;
   gap:10px;
+  font-size:20px;
+  font-weight:bold;
 }
 .form div{
   display: flex;
@@ -757,6 +769,7 @@ img{
   color:black;
   border-radius:10px;
   border:0px solid;
+  padding:5px;
 }
 .promocode button{
   color:black;
@@ -772,7 +785,6 @@ img{
   width:95%;
   height:5%;
 }
-
 
 @media screen and (max-width:431px){
     .homeimage{
@@ -882,6 +894,49 @@ img{
     }
     .item12{
         order:11;
+    }
+
+    .shoppingcart{
+      width: 430px;
+      height:932px;
+      margin-top:25%;
+      max-width:95%;
+      max-height:auto;
+    }
+    .checkout{
+      top:75%;
+      width: 430px;
+      height:932px;
+      margin-top:50%;
+      margin-left:2%;
+      max-width:95%;
+      max-height:auto;
+    }
+    .display{
+      gap:50px;
+    }
+    .display div{
+      width:50%;
+    }
+    .cost{
+      width: 430px;
+      height:932px;
+      margin-top:670px;
+      margin-left:220px;
+      width:40%;
+      height:50px;
+    }
+    .cost h2{
+      font-size: medium;
+    }
+    .cost div{
+      font-size:medium;
+    }
+    .form_image1{
+      left:50%;
+    }
+    .form_image2{
+      left:40%;
     }
     
 }
