@@ -360,7 +360,7 @@ html{
     margin:0;
     color:white;
 }
-body{
+body{  /* Setting up galaxy background and making every text unless setted otherwise */
     text-align: center;
     background-image: url("images/1337846.png");
     background-size: cover;
@@ -377,15 +377,16 @@ img{
   position:absolute;
   background-image: url(images/fashion-women-pants-blonde-friends.jpg);
   background-size: cover;
-  width: 1903px;
+  width: 1920px;
   height:1080px;
+  max-width:100%;
   display:flex;
   justify-content: flex-end;
   align-items: center;
   margin-top:3.55%;
 }
 
-.header{
+.header{ /* Captions in index html */
   margin-right:5%;
   margin-bottom:10%;
   font-size:50px;
@@ -393,7 +394,7 @@ img{
   color:rgb(165, 41, 62);
   word-spacing: 150px;
 }
-.header h1{
+.header h1{ /* Logo in captions */
   font-weight:bolder;
   font-family:"homemade apple";
   color:red;
@@ -401,33 +402,20 @@ img{
   border-color: azure;
 }
 
-.button{
+.button{ /* Button in index html */
   position:relative;
   font-size:30px;
   padding:10px 200px;
   border-radius: 20px;
-}
-.button a{
+  background-color: azure;
   color:black;
+  border:2px solid black;
 }
-
-
-/*Nav bar = Navigation Bar which is the universal link to all pages */
-/* .navbar{
-    z-index:0;
-    position: fixed;
-    width: 1920px;
-    height: 1080px;
-    max-height:11%;
-    color:white;
-    font-size: 20px;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-    padding:5px;
-    padding-bottom:10px;
-    background-color: rgb(61, 167, 29);
+/* .button a{ Changing text color of the button in index html 
+  color:black;
 } */
-.navbarflex{
+
+.navbarflex{ /* Navigation bar */
     border-bottom:3px solid;
     position: fixed;
     width: 1920px;
@@ -440,43 +428,26 @@ img{
     gap:20px;
     z-index: 100;
 }
-.navbarflex div{
+.navbarflex div{ /* Icons in Navigation bar */
     margin-right:70px;
     font-weight: bold;
+    transition: transform 0.3s; /* Animation */
 }
-.navbarflex i{
+.navbarflex div:hover{
+  transform: translateY(-3px) /* Animation */
+}
+.navbarflex i{ /* Shopping cart icon */
     margin-right:40px;
+    transition: transform 0.3s;
 }
-.navbarflex form{
+.navbarflex i:hover{
+  transform: translateY(-3px) /* Animation */
+}
+.navbarflex form{ /* Search */
   font-weight:bold;
 }
 
-/*Nav bar flex is to spread all the components of the flex items such as Home, Shop, About Us*/
-/* .navbarflex{
-    display:flex;
-    justify-content: space-evenly; 
-    border:2px solid;
-    border-color:black;
-}
-*/
-
-/*Nav bar flex form is to ensure that the search bar is on the right instead of on the left */
-/*.navbarflex form{
-    border:2px solid;
-    border-color:black;
-    display:flex;
-    justify-content: flex-end;
-    margin-left:200px;
-}
-
-.navbarflex div{
-    border:2px solid;
-    border-color:black;
-    display:flex;
-    justify-content: center;
-}
-*/
-#logo{
+#logo{ /* Logo, Fashionable */
     position: fixed;
     z-index:100;
     width: 1920px;
@@ -498,14 +469,14 @@ img{
 
 /*Container for sales refers to container for item being sold*/
 .container_sales{
-    background-color: rgb(128, 128, 128,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     margin:20px;
     padding:50px;
     margin-top:130px;
     border-radius: 75px;
 }
 
-.container_sales h1{
+.container_sales h1{ /* Header within the container */
     color:white;
     border-bottom: 2px solid;
     border-radius: 20px;
@@ -520,16 +491,16 @@ img{
     flex-wrap:wrap;
     color:white;
 }
-.gallery img{
+.gallery img{ /* Adjusting the size such that it fits in the containers */
     /* flex-basis:13.5%;  */
     flex-grow:0;
-    width:230px;
+    width:13%; /*Used to be 230 px*/
     height:auto;
 }
 
-.gallery h3{
+.gallery h3{ /* Adjusting the description of the images */
     justify-content: center;
-    width:230px;
+    width:13%; /*Used to be 230px*/
     margin-top:10px;
 }
 
@@ -569,6 +540,7 @@ img{
     display:flex;
     order:0;
 }
+/* Item is to set every description as a item such that it has an order */
 .item7{
     display:flex;
     order:0;
@@ -599,7 +571,7 @@ img{
 }
 
 
-.shoppingcart{
+.shoppingcart{ /* Container on the left */
   position:absolute;
   margin-top:7%;
   margin-left:2%;
@@ -611,20 +583,20 @@ img{
   border:2px solid;
   border-color:white;
   flex-direction: column;
-  background-color:rgb(128, 128, 128,0.5);
+  background-color:rgba(0, 0, 0, 0.7);
   border-radius: 20px;
   
 }
 
-.shoppingcart h1{
+.shoppingcart h1{ /* Header within the container */
   border-bottom:2px solid;
   border-color:white;
   border-bottom-left-radius:200px;
   border-bottom-right-radius:200px;
   padding-bottom:20px;
 }
-.display{
-  height:90%;
+.display{ /* Displaying of items within the cart */
+  max-height:90%;
   margin-top:1%;
   display:flex;
   flex-direction: column;
@@ -632,13 +604,14 @@ img{
   flex-wrap:wrap;
   gap:100px;
   font-size:larger;
+  font-weight:bold;
   margin-left:10%
 }
-.display img{
+.display img{ /* Images within the cart */
   max-width:20%;
   height:auto;
 }
-.display div{
+.display div{ /* Items in the cart */
   background-color: azure;
   border-radius:10px;
   color:black;
@@ -649,7 +622,7 @@ img{
   height:70px;
 }
 
-.cost{
+.cost{  /* Container of the Total cost */
   position:absolute;
   display:flex;  
   width:20%;
@@ -661,7 +634,7 @@ img{
   background-color: azure;
   border-radius: 20px;
 }
-.cost h2{
+.cost h2{ /* Header of total cost */
   color:black;
   font-size:30px;
   font-weight:bold;
@@ -674,7 +647,7 @@ img{
   border-color:white; */
 }
 
-.cost div{
+.cost div{ /* Total cost */
   color:black;
   width:100%;
   display:flex;
@@ -686,7 +659,7 @@ img{
   font-weight:bold;
 }
 
-.checkout{
+.checkout{ /* Container on the right */
   position:absolute;
   margin-top:7%;
   margin-left:65%;
@@ -694,103 +667,104 @@ img{
   height:1080px;
   max-width:30%;
   max-height:80%;
-  background-color:rgb(128, 128, 128,0.5);
+  background-color:rgba(0, 0, 0, 0.7);
   border:2px solid;
   border-color:white;
   border-radius:20px;
 }
 
-.checkout h1{
+.checkout h1{ /* Header of the container */
   border-bottom:2px solid;
   border-bottom-left-radius:200px;
   border-bottom-right-radius:200px;
   padding-bottom:20px;
 }
 
-.form{
+.form{ /* Container for the options within checkout */
   display:flex;
   flex-direction: column;
   height:50%;
-  gap:10px;
+  gap:20px;
   font-size:20px;
   font-weight:bold;
+  margin-top:7%;
 }
-.form div{
+.form div{  /* Container for the actual selection for card or paynow */
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-basis:25%;
   margin-left:5%;
-  gap:30px;
 }
 
-/* .form div img{
-  position:absolute;
-  margin-left:0%;
-  height:20%;
-  width:auto;
-  border:2px solid;
-} */
 
-.form_image1{
+/* .form_image1{ 
   position:absolute;
   margin-left:0%;
   left:40%;
 }
-.form_image1 img{
+.form_image1 img{  
   width:40%;
   height:auto;
 }
 
-.form_image2{
+.form_image2{  
   position:absolute;
   margin-left:0%;
   height:15%;
   width:auto;
   left:35%;
+} */
+
+.form_image1{
+  max-width:15%;
 }
-.promo{
+.form_image2{
+  margin-left:8%;
+}
+
+.promo{ /* Container for promo code */
   margin-left:20px;
+  margin-top:7%;
 }
-.promo label{
+.promo label{ /* Text that says Promo Code */
   display:flex;
   justify-content: flex-start;
   font-size:20px;
   font-weight:bold;
 }
-.promo input{
-  display:flex;
-}
-.promocode{
+
+.promocode{ /* Container for promo code text box and the submission button */
   display:flex;
   gap:30px;
 }
-.promocode input{
+.promocode input{ /* Promo code text box */
   color:black;
   border-radius:10px;
   border:0px solid;
   padding:5px;
+  font-weight:bold;
 }
-.promocode button{
+.promocode button{ /* Promo code submission */
   color:black;
   border-radius:10px;
   border:0px solid;
+  font-weight:bold;
 }
-.promobutton{
-  color:black;
+.checkoutbutton{ /* Checkout Button at the bottom at the container on the right */
+  color:rgb(0, 0, 0);
   border:2px solid;
-  margin-top:16%;
+  margin-top:17%;
   border-radius:20px;
-
+  font-weight:bold;
   width:95%;
-  height:5%;
+  padding:2%;
 }
 
 @media screen and (max-width:431px){
     .homeimage{
-      width: 430px;
+      width: 100%;
       height:932px; 
-      margin-top:19%;
+      margin-top:18%;
     }
 
     .header{
@@ -813,18 +787,15 @@ img{
         flex-wrap:wrap;
 
     }
-    .navbarflex div{
+   .navbarflex div{
         margin-right:0px;
+        margin-left:15px;
+        /* margin-top:20px; */
     }
     #logo{
         font-size:0px;
         
     }
-    /* .navbarflex{
-        font-size:small;
-        gap:10%;
-        flex-wrap:wrap;
-    } */
     .navbarflex form{
         margin:0px;
     }
@@ -847,6 +818,9 @@ img{
         width:30%;
         height:10%;
     }
+
+
+    /* Changing the order such that it would fit in a container with a formation of a 3 by 2  */
     .box1{
         border:20px solid;
         border-color: white;
@@ -895,25 +869,32 @@ img{
     .item12{
         order:11;
     }
-
     .shoppingcart{
       width: 430px;
       height:932px;
       margin-top:25%;
       max-width:95%;
-      max-height:auto;
     }
     .checkout{
       top:75%;
       width: 430px;
       height:932px;
-      margin-top:50%;
+      margin-top:45%;
       margin-left:2%;
       max-width:95%;
-      max-height:auto;
+    
+    }
+    .promo{
+      /* margin-top:25%; */
+    }
+    .checkoutbutton{
+      margin-top:10%; /*Added*/
     }
     .display{
       gap:50px;
+      /*Added to check on laptop */
+      max-width:70%;
+      max-height:45%;
     }
     .display div{
       width:50%;
@@ -921,16 +902,19 @@ img{
     .cost{
       width: 430px;
       height:932px;
-      margin-top:670px;
+      margin-top:120%;
       margin-left:220px;
-      width:40%;
-      height:50px;
+      max-width:40%; /*Changed in laptop*/
+      max-height:50px;
     }
     .cost h2{
       font-size: medium;
     }
     .cost div{
       font-size:medium;
+    }
+    .form{
+      margin-top:15%;
     }
     .form_image1{
       left:50%;

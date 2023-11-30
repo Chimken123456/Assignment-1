@@ -10,10 +10,7 @@ If a user presses into the catogory of clothes, it will show a list of clothes o
 As a user type a specific clothing, I want to display relevant results to the user.
 
 Features:
-
-Features left to implement:
-Having the search box to work such that the user can use it to search specific item that the user wants
-Category boxes to work such that it displays item specifically to that category
+Promo code
 
 
 
@@ -25,7 +22,7 @@ https://www.pinterest.com/pin/1077908492049678332/ (Pants)
 https://www.pinterest.com/pin/1077908492049678025/ (Jacket)
 https://www.pinterest.com/pin/AbwMM-wh6mRWFyhZUUg3xBEgSAxHwVr_ASaJCEH6wETmw1zUJB_f-PBwD7ke9IFHcZYh9mKIA7PcygeKpBIw0Qo/ (Jeans)
 https://www.pinterest.com/pin/1077908492049948002/ (Polar Fleece Sweatshirt)
-https://www.pinterest.com/pin/1077908492049948009/ (Khaki Pants)
+https://www.pinterest.com/pin/1077908492049948009/ (ShaleGrey Pants)
 https://www.pinterest.com/pin/1077908492049730999/ (Waist Shorts)
 https://www.pinterest.com/pin/AR-CV7clUxB6LW6VQ5_Mmr3iqNGi9GVWRIuj9ups2VUtVMGASzvfLkGltnI61smY7aoJOj0mSboc8SsrVVd_41g/ (Henly Shirt)
 https://www.pinterest.com/pin/1077908492049730974/ (Windbreaker)

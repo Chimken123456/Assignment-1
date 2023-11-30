@@ -1,20 +1,23 @@
-
-<html>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4aa858a7fc.js" crossorigin="anonymous"></script>
-    
+<!DOCTYPE html>
+<html lang = "en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>CheckOut</title>
+        <link href="style.css" rel="stylesheet" type="text/css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4aa858a7fc.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
         <header>
-            <!-- <nav class = navbar> -->
-                <!-- <div id = logo>Fashionable</div> -->
+            <nav>
+                <!--Navigation bar-->
                 <div id = logo>Fashionable</div>
                 <div class = navbarflex>
                     <div><a href = "index.html" title = "Home"><i class="fa-solid fa-house"></i></a></div>
@@ -32,48 +35,47 @@
                 </div>
             </nav>
         </header>
-    </head>
 
-    <body>
-        <div class = "shoppingcart">
+        <div class = "shoppingcart"> <!--Container on the left-->
             <header>
                 <h1>Shopping Cart</h1>
             </header>
 
             <!-- Items -->
-            <section class = "display">
-                <div><img src = "images/74ddd4c43ff6531c1741b56e5373f550.jpg">Shirt</div>
-                <div><img src = "images/60909f1b1ec1928718583462887101d3.jpg">Pants</div>
-                <div><img src = "images/5678bdf9361dffbb932d143b333ff3e2.jpg">Henly Shirt</div>
-                <div><img src = "images/ef23838bf2e41a4bcffc3b1474bec4b2.jpg">Jeans</div>
-            </section>
+            <div class = "display">
+                <div><img src = "images/74ddd4c43ff6531c1741b56e5373f550.jpg" alt = "Shirt">Shirt</div>
+                <div><img src = "images/60909f1b1ec1928718583462887101d3.jpg" alt = "Pants">Pants</div>
+                <div><img src = "images/5678bdf9361dffbb932d143b333ff3e2.jpg" alt = "Henly Shirt">Henly Shirt</div>
+                <div><img src = "images/ef23838bf2e41a4bcffc3b1474bec4b2.jpg" alt = "Jeans" >Jeans</div>
+            </div>
             
         </div>
 
-        <div class = "cost">
+        <div class = "cost"> <!--Displaying of the total cost-->
             <h2>Total</h2>
-            <div id = "value"></div>
+            <div id = "value"></div> <!--Assigining of id such that javascript can display price-->
         </div>
 
-        <div class = checkout>
+        <div class = checkout> <!--Container on the right-->
             <header>
                 <h1>Payment</h1>
             </header>
 
             <form>
-                <label class = "form"><h2>Payment method</h2><br>
+                <h2>Payment method</h2><br>
+                <div class = "form"> <!--Choosing between card or paynow options-->
                     <div>
                         <input type = "radio" name = "paymennt_method" id = "credit_card"> Credit/Debit card
-                        <div class="form_image1"><img src = "images/credit-card-black-png-0.png"></div>
+                        <img class = "form_image1" src = "images/credit-card-black-png-0.png" alt = "Credit Card">
                     </div>
                     <div>
                         <input type = "radio" name = "paymennt_method" id = "pay_now"> PayNow
-                        <div class="form_image2"><img src = "images/paynow-logo-2-01.png"></div>
+                        <img class="form_image2" src = "images/paynow-logo-2-01.png" alt = "Paynow">
                     </div>
                     <br>
                     <br>
-                </label>
-                <div class = "promo">
+                </div>
+                <div class = "promo"> <!--Feature of promo codes-->
                     <label>Promo Code</label><br>
                     <div class = "promocode">
                         <input type = "text" placeholder="Code" name="promo_code" id = "code">
@@ -81,12 +83,13 @@
                     </div>
                 </div>
 
-                <button class ="promobutton">
+                <button class ="checkoutbutton"> <!--Checkout button-->
                     Checkout
                 </button>
             </form>
         </div>
+        <script src = "script.js"></script>
     </body>
 
-    <script src = "script.js"></script>
-</html>>
+    
+</html>
