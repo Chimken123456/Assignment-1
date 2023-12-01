@@ -46,7 +46,7 @@ In mobile view,
 When the user tries to press the hamburger menu on the right, verify the menu will slide in from the left and display the menu
 
 The website is responsive to mobile and desktop.
-Some elements of the website will look weird and out of place if the website is reduced to a size that isnt both desktop and mobile
+Some elements of the website will look weird or out of place if the website is reduced to a size that isnt both desktop and mobile
 
 Credits:
 https://www.pinterest.com/pin/1077908492049678352/ (Shirt)
@@ -67,5 +67,3 @@ https://vivaglammagazine.com/womens-fashion-choice-8-things-every-woman-should-h
 
 https://thewhisky.sg/paynow-logo-2-01/ (Paynow Logo)
 https://www.freeiconspng.com/images/credit-card-icon-png (Credit/Debit card image)
-
-
