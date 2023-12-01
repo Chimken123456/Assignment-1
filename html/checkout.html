@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang = "en">
+    
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>CheckOut</title>
-        <link href="style.css" rel="stylesheet" type="text/css" >
+        <link href = "/css/normalize.css" rel="stylesheet" type = "text/css">
+        <link href="/css/style.css" rel="stylesheet" type="text/css" >
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -12,16 +14,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto:wght@100&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4aa858a7fc.js" crossorigin="anonymous"></script>
-        
     </head>
+
     <body>
         <header>
             <nav>
                 <!--Navigation bar-->
                 <div id = logo>Fashionable</div>
                 <div class = navbarflex>
-                    <div><a href = "index.html" title = "Home"><i class="fa-solid fa-house"></i></a></div>
-                    <div><a href = "shop.html" title = "Shop"><i class="fa-solid fa-shop"></i></a></div>
+                    <div><a href = "/html/index.html" title = "Home"><i class="fa-solid fa-house"></i></a></div>
+                    <div><a href = "/html/shop.html" title = "Shop"><i class="fa-solid fa-shop"></i></a></div>
                     <div><i class="fa-solid fa-circle-info"></i></div>
                     <div><i class="fa-solid fa-phone"></i></div>
                     <div><i class="fa-solid fa-star"></i></div>
@@ -31,7 +33,12 @@
                             <input type = "text" placeholder="Search">
                         </label>
                     </form>
-                    <a href = "checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href = "/html/checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <div class = "hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -43,10 +50,10 @@
 
             <!-- Items -->
             <div class = "display">
-                <div><img src = "images/74ddd4c43ff6531c1741b56e5373f550.jpg" alt = "Shirt">Shirt</div>
-                <div><img src = "images/60909f1b1ec1928718583462887101d3.jpg" alt = "Pants">Pants</div>
-                <div><img src = "images/5678bdf9361dffbb932d143b333ff3e2.jpg" alt = "Henly Shirt">Henly Shirt</div>
-                <div><img src = "images/ef23838bf2e41a4bcffc3b1474bec4b2.jpg" alt = "Jeans" >Jeans</div>
+                <div><img src = "/images/74ddd4c43ff6531c1741b56e5373f550.jpg" alt = "Shirt">Shirt</div>
+                <div><img src = "/images/60909f1b1ec1928718583462887101d3.jpg" alt = "Pants">Pants</div>
+                <div><img src = "/images/5678bdf9361dffbb932d143b333ff3e2.jpg" alt = "Henly Shirt">Henly Shirt</div>
+                <div><img src = "/images/ef23838bf2e41a4bcffc3b1474bec4b2.jpg" alt = "Jeans" >Jeans</div>
             </div>
             
         </div>
@@ -65,12 +72,12 @@
                 <h2>Payment method</h2><br>
                 <div class = "form"> <!--Choosing between card or paynow options-->
                     <div>
-                        <input type = "radio" name = "paymennt_method" id = "credit_card"> Credit/Debit card
-                        <img class = "form_image1" src = "images/credit-card-black-png-0.png" alt = "Credit Card">
+                        <input type = "radio" name = "paymennt_method" id = "credit_card" required> Credit/Debit card
+                        <img class = "form_image1" src = "/images/credit-card-black-png-0.png" alt = "Credit Card">
                     </div>
                     <div>
-                        <input type = "radio" name = "paymennt_method" id = "pay_now"> PayNow
-                        <img class="form_image2" src = "images/paynow-logo-2-01.png" alt = "Paynow">
+                        <input type = "radio" name = "paymennt_method" id = "pay_now" required> PayNow
+                        <img class="form_image2" src = "/images/paynow-logo-2-01.png" alt = "Paynow">
                     </div>
                     <br>
                     <br>
@@ -88,7 +95,7 @@
                 </button>
             </form>
         </div>
-        <script src = "script.js"></script>
+        <script src = "/js/script.js"></script>
     </body>
 
     

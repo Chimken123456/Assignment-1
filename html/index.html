@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Homepage</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href = "/css/normalize.css" rel="stylesheet" type = "text/css">
+        <link href="/css/style.css" rel="stylesheet" type="text/css" >
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -15,12 +16,12 @@
     </head>
     <body>
         <header>
-            <!-- Navigation bar -->
             <nav>
+                <!--Navigation bar-->
                 <div id = logo>Fashionable</div>
                 <div class = navbarflex>
-                    <div><a href = "index.html" title = "Home"><i class="fa-solid fa-house"></i></a></div>
-                    <div><a href = "shop.html" title = "Shop"><i class="fa-solid fa-shop"></i></a></div>
+                    <div><a href = "/html/index.html" title = "Home"><i class="fa-solid fa-house"></i></a></div>
+                    <div><a href = "/html/shop.html" title = "Shop"><i class="fa-solid fa-shop"></i></a></div>
                     <div><i class="fa-solid fa-circle-info"></i></div>
                     <div><i class="fa-solid fa-phone"></i></div>
                     <div><i class="fa-solid fa-star"></i></div>
@@ -30,7 +31,12 @@
                             <input type = "text" placeholder="Search">
                         </label>
                     </form>
-                    <a href = "checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href = "/html/checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <div class = "hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -43,6 +49,6 @@
             </div>
         </section>
         
-        <script src = "script.js"></script>
+        <script src = "/js/script.js"></script>
     </body>
 </html>
